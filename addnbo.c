@@ -19,6 +19,8 @@ int checksec(char file_name[], int* num){
 	}
 	
 	fread(num, sizeof(uint32_t), 1, fp);
+
+	fclose(fp);
 	
 	return 1;
 }
